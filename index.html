@@ -22,6 +22,6 @@
 	<input type="input" ng-model="bookname" class="name-input"></input>
 	<div ng-bind="getUrl(bookname)"></div>
 	<input type="button" ng-click="downloadBook()" value="Download this book"></input>
-
+	<a href="{{getUrl(bookname)}}" target="_blank" >{{bookname}}</a>
 </body>
 </html>
